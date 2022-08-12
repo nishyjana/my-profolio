@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ABOUT_ME_PATH, CONTACT_ME_PATH } from "./components/constants/PathIndex";
 import LayerWithNavBar from "./components/Layer/LayerWithNavBar";
 import AboutMe from "./components/pages/AboutMe";
 import ContactMe from "./components/pages/ContactMe";
@@ -14,11 +15,11 @@ function App() {
           element={<LayerWithNavBar childComp={<HomePage />} />}
         />
         <Route
-          path="/about_me"
+          path={ABOUT_ME_PATH}
           element={<LayerWithNavBar childComp={<AboutMe />} />}
         />
         <Route
-          path="/contact_me"
+          path={CONTACT_ME_PATH}
           element={<LayerWithNavBar childComp={<ContactMe />} />}
         />
       </Routes>
