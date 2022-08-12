@@ -2,6 +2,6 @@ import React from "react";
 
 export default function HomePage(){
     return(
-        <div>Hi</div>
+        <div className="underline">Hi</div>
     )
 }
