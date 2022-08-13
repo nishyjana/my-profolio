@@ -10,7 +10,7 @@ export default function LayerWithNavBar({ childComp }: Props) {
   return (
     <div className="w-full h-screen">
       <NavBar navProps={navProps} />
-      <div className="p-6 w-full bg-black h-screen">{childComp}</div>
+      <div className="p-6 -mt-3 w-full bg-black h-screen">{childComp}</div>
     </div>
   );
 }
