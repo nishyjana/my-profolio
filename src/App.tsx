@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ABOUT_ME_PATH, CONTACT_ME_PATH } from "./components/constants/PathIndex";
+import { ABOUT_ME_PATH, CONTACT_ME_PATH, HOME_PAGE_PATH } from "./components/constants/PathIndex";
 import LayerWithNavBar from "./components/Layer/LayerWithNavBar";
 import AboutMe from "./components/pages/AboutMe";
 import ContactMe from "./components/pages/ContactMe";
@@ -11,7 +11,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path={HOME_PAGE_PATH
+          }
           element={<LayerWithNavBar childComp={<HomePage />} />}
         />
         <Route

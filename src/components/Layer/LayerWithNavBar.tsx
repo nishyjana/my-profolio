@@ -1,4 +1,4 @@
-import { ABOUT_ME, CONTACT_ME, CONSULTANCE } from "../constants/NavIndex";
+import { ABOUT_ME, CONTACT_ME, CONSULTANCE, WELCOME } from "../constants/NavIndex";
 import NavBar from "../molecule/NavBar";
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function LayerWithNavBar({ childComp }: Props) {
-  const navProps = [ABOUT_ME, CONTACT_ME, CONSULTANCE];
+  const navProps = [WELCOME, ABOUT_ME, CONTACT_ME, CONSULTANCE];
   return (
     <div className="w-full h-screen">
       <NavBar navProps={navProps} />

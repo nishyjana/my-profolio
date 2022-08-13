@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { ABOUT_ME, CONSULTANCE, CONTACT_ME } from "../constants/NavIndex";
-import { ABOUT_ME_PATH, CONTACT_ME_PATH } from "../constants/PathIndex";
+import { ABOUT_ME, CONSULTANCE, CONTACT_ME, WELCOME } from "../constants/NavIndex";
+import { ABOUT_ME_PATH, CONTACT_ME_PATH, HOME_PAGE_PATH } from "../constants/PathIndex";
 
 interface Props {
   navProps: any;
@@ -14,9 +14,9 @@ export default function NavBar({ navProps }: Props) {
         ? navProps?.map((prop: any) => {
             return (
               <div
-                className={`flex justify-end hover:text-xl px-4 cursor-wait ${
+                className={`flex justify-end hover:text-xl px-4 hover:text-orange cursor-wait ${
                   prop === CONSULTANCE
-                    ? "py-2 -mt-2 border-2 border-blue bg-orange  text-blue rounded-3xl hover:text-base"
+                    ? "py-2 -mt-2 border-2 border-blue bg-orange  text-blue rounded-3xl hover:text-base hover:text-blue"
                     : null
                 }`}
                 onClick={() => {
@@ -24,6 +24,8 @@ export default function NavBar({ navProps }: Props) {
                     navigate(ABOUT_ME_PATH);
                   } else if (prop === CONTACT_ME) {
                     navigate(CONTACT_ME_PATH);
+                  } else if(prop === WELCOME){
+                    navigate(HOME_PAGE_PATH)
                   }
                 }}
               >
