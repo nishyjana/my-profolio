@@ -13,7 +13,7 @@ export default function HomePage() {
           <img
             src={MyImageURl}
             alt="img"
-            className="w-full h-full object-cover rounded-full opacity-30"
+            className="w-full h-full object-cover rounded-full opacity-50"
           />
         </div>
         <div className="flex-1 w-full  h-full p-6 flex-col my-3 justify-between text-white font-serif">
