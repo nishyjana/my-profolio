@@ -16,7 +16,7 @@ export default function HomePage() {
           />
         </div>
         <div className="flex-1 w-full  h-full p-6 flex-col my-3 justify-between text-white font-serif">
-          <div className="p-10 border-2 text-orange text-opacity-80 border-separate border-opacity-10 border-orange rounded-3xl my-10">
+          <div className="p-10 border-2 bg-orange bg-opacity-5 text-orange text-opacity-80 border-separate border-opacity-10 border-orange rounded-3xl my-10">
             <div className="my-8"> FULL NAME : Janarthanarajah Nishanthan</div>
             <div className="my-8">
               QUALIFICATION : BEng(hons) in Software Engineering
@@ -30,6 +30,9 @@ export default function HomePage() {
             <TwitterIcon />
           </div>
         </div>
+      </div>
+      <div className="text-orange my-1 mx-auto text-center mt-10 ">
+        © 2022. Nishanthan. All Rights Reserved.
       </div>
     </div>
   );
