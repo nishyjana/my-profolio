@@ -1,4 +1,4 @@
-import { ABOUT_ME, CONTACT_ME, CONSULTANCE, WELCOME } from "../constants/NavIndex";
+import { ABOUT_ME, CONTACT_ME, CONSULTANCE } from "../constants/NavIndex";
 import NavBar from "../molecule/NavBar";
 
 interface Props {
@@ -6,11 +6,11 @@ interface Props {
 }
 
 export default function LayerWithNavBar({ childComp }: Props) {
-  const navProps = [WELCOME, ABOUT_ME, CONTACT_ME, CONSULTANCE];
+  const navProps = [ABOUT_ME, CONTACT_ME, CONSULTANCE];
   return (
     <div className="w-full h-screen">
       <NavBar navProps={navProps} />
-      <div className="p-2 w-full bg-blue h-screen">{childComp}</div>
+      <div className="p-6 w-full bg-black h-screen">{childComp}</div>
     </div>
   );
 }
