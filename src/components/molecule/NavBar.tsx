@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { ABOUT_ME, CONSULTANCE, CONTACT_ME, WELCOME } from "../constants/NavIndex";
+import { ABOUT_ME, CONSULTANCE, CONTACT_ME } from "../constants/NavIndex";
 import { ABOUT_ME_PATH, CONTACT_ME_PATH, HOME_PAGE_PATH } from "../constants/PathIndex";
 
 interface Props {
