@@ -8,7 +8,7 @@ interface Props {
 export default function LayerWithNavBar({ childComp }: Props) {
   const navProps = [ABOUT_ME, CONTACT_ME, CONSULTANCE];
   return (
-    <div className="w-full h-full bg-black">
+    <div className={`hidden  lg:block w-full h-full bg-black`}>
       <NavBar navProps={navProps} />
       <div className="p-6 -mt-3 w-full bg-black h-full">{childComp}</div>
     </div>
