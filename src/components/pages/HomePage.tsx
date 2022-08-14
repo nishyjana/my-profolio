@@ -28,6 +28,9 @@ export default function HomePage() {
       <div className="text-orange my-1 mx-auto text-center mt-10 ">
         © 2022. Nishanthan. All Rights Reserved.
       </div>
+      <div className="text-orange my-1 mx-auto text-center mt-10 ">
+        Designed and developed by Nishanthan
+      </div>
     </div>
   );
 }
