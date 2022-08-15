@@ -4,7 +4,7 @@ export default function ContactMe() {
       <div className="text-orange text-center p-10">Under development</div>
       <img
         alt="progress"
-        className="m-auto my-10 opacity-60 w-1/3 h-1/3 rounded-full "
+        className="m-auto my-10 opacity-60 w-1/3 h-1/3 rounded-full animate-bounce"
         src="https://underconstructionpage.com/wp-content/uploads/2017/07/underconstruction-twitter.png"
       />
     </div>

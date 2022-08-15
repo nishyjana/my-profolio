@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { ABOUT_ME, CONSULTANCE, CONTACT_ME } from "../constants/NavIndex";
+import { ABOUT_ME, CONSULTANCE, CONTACT_ME, WELCOME } from "../constants/NavIndex";
 import {
   ABOUT_ME_PATH,
   CONTACT_ME_PATH,
   HOME_PAGE_PATH,
+  WELCOME_PATH,
 } from "../constants/PathIndex";
 
 interface Props {
@@ -40,7 +41,9 @@ export default function NavBar({ navProps }: Props) {
                       alert(
                         "Very sorry for the trouble, Still under development. Please contact me through nishyjana6435@gmail.com"
                       );
-                    }
+                    }else if (prop === WELCOME) {
+                      navigate(WELCOME_PATH);
+                    } 
                   }}
                 >
                   {prop}
