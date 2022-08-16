@@ -10,7 +10,7 @@ import { GITHUB_LINK } from "../constants/Resources";
 export default function Welcome() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  const [display, setDisplay] = useState(false);
   const clickedCounts = useSelector(
     (state: RootState) => state.general.clickCount
   );
@@ -42,13 +42,22 @@ export default function Welcome() {
           Thank you for stopping by! This is my personal website.
         </p>
         <div className="w-full flex flex-col">
+        <h2 className="text-orange m-auto">Give likes to my web(click counter lol 🤪)</h2>
           <h1
-            className="m-auto my-2 cursor-pointer flex-col"
-            onClick={() => dispatch(addClickCount(count))}
+            className="m-auto my-2 cursor-pointer flex-col text-orange"
+            onClick={() => {
+              setDisplay(true);
+              dispatch(addClickCount());
+            }}
           >
             👍
           </h1>
-          <div className=" text-orange m-auto mb-3">{clickedCounts} Likes</div>
+          
+          {display ? (
+            <div className=" text-orange m-auto mb-3">
+              {clickedCounts} Likes
+            </div>
+          ) : null}
         </div>
 
         <div className="flex w-full">
