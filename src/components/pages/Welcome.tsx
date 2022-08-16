@@ -19,7 +19,7 @@ export default function Welcome() {
 
   return (
     <div className="h-full lg:h-screen w-full bg-black lg:border-2 lg:border-orange lg:border-opacity-40 rounded-3xl lg:p-10">
-      <div className="p-3 lg:p-10 bg-white bg-opacity-5 h-full w-full rounded-3xl flex-col">
+      <div className="p-3 lg:p-10 lg:bg-white lg:bg-opacity-5 lg:h-full lg:w-full rounded-3xl flex-col">
         <div className="justify-between flex">
           <img
             src={require("../../../src/images/cele.jpeg")}
@@ -33,7 +33,7 @@ export default function Welcome() {
           />
         </div>
         {isMobile ? (
-          <h1 className="text-red text-center text-3xl p-10 animate-pulse">
+          <h1 className="text-center text-3xl p-10 animate-pulse text-red-600">
             Not best fit for mobile view
           </h1>
         ) : null}

@@ -6,7 +6,7 @@ import TwitterIcon from "../atom/TwitterIcon";
 export default function HomePage() {
   return (
     <div className="w-full h-full p-20 bg-black bg-opacity-5 rounded-2xl">
-      <div className="border-2 border-orange border-opacity-20 h-full w-full rounded-2xl m-auto flex">
+      <div className="lg:border-2 lg:border-orange border-opacity-20 h-full w-full rounded-2xl m-auto flex">
         <div className="hidden lg:block flex-1 w-full border-r-4 shadow-lg border-orange p-20  text-white rounded-full">
           <img
             src={require("../../../src/images/mypicc.png")}
