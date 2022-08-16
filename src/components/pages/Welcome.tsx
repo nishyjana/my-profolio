@@ -10,11 +10,12 @@ import { GITHUB_LINK } from "../constants/Resources";
 export default function Welcome() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const [count] = useState(0);
 
   const clickedCounts = useSelector(
     (state: RootState) => state.general.clickCount
   );
+
+  const [count] = useState(clickedCounts);
   return (
     <div className="h-screen w-full bg-black border-2 border-orange border-opacity-40 rounded-3xl p-10">
       <div className="p-10 bg-white bg-opacity-5 h-full w-full rounded-3xl flex-col">

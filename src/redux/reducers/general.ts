@@ -14,7 +14,7 @@ const generalReducer = (state = initialState, action: any): InitialStateInt => {
         case CLICK:
             return {
                 ...state,
-                clickCount: action.payload
+                clickCount: initialState.clickCount++
 
             }
 
