@@ -18,8 +18,8 @@ export default function Welcome() {
   );
 
   return (
-    <div className="h-screen w-full bg-black border-2 border-orange border-opacity-40 rounded-3xl p-10">
-      <div className="p-10 bg-white bg-opacity-5 h-full w-full rounded-3xl flex-col">
+    <div className="h-full lg:h-screen w-full bg-black lg:border-2 lg:border-orange lg:border-opacity-40 rounded-3xl lg:p-10">
+      <div className="p-3 lg:p-10 bg-white bg-opacity-5 h-full w-full rounded-3xl flex-col">
         <div className="justify-between flex">
           <img
             src={require("../../../src/images/cele.jpeg")}
@@ -76,8 +76,8 @@ export default function Welcome() {
             Get Started
           </button>
         </div>
-        <div className="flex w-full mt-20">
-          <p className="text-orange text-center text-lg  m-auto p-10 animate-pulse flex">
+        <div className="lg:flex w-full mt-20">
+          <p className="text-orange text-center text-lg  m-auto p-10 animate-pulse lg:flex">
             You can find the source code base of this webiste
             <div
               className="text-white text-xl mx-2  cursor-pointer"

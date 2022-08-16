@@ -1,5 +1,4 @@
 
-import _ from 'lodash';
 import { CLICK } from '../reduxConstants';
 
 export interface InitialStateInt {
