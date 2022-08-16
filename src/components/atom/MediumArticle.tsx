@@ -14,7 +14,7 @@ export default function MediumArticle() {
       });
   }, []);
   return (
-    <div className="w-full h-screen lg:flex">
+    <div className="w-full h-full lg:flex">
       {blogs.map((blog: any) => {
         return (
           <div className="text-orange flex-col w-full p-10">
