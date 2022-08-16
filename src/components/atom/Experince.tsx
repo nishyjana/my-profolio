@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
-    <div className="w-full h-full p-10">
-      <div className="border-2 border-orange border-opacity-10 p-10  text-orange text-opacity-80 rounded-3xl flex-col">
+    <div className="w-full h-full lg:p-10">
+      <div className="lg:border-2 lg:border-orange lg:border-opacity-10 p-5 first-letter:lg:p-10  text-orange text-opacity-80 rounded-3xl flex-col">
         <div className="my-1 text-lg"> 🟡 Rootcode Labs ( 2021 - present)</div>
         <div className="my-1 text-sm"> Full time 1yr 8 months </div>
         <div className="list-inside">

@@ -33,22 +33,22 @@ export default function Welcome() {
           />
         </div>
         {isMobile ? (
-          <h1 className="text-center text-3xl p-10 animate-pulse text-red-600">
+          <h1 className="text-center text-xl p-10 animate-pulse text-red-600">
             Not best fit for mobile view
           </h1>
         ) : null}
-        <h1 className="text-orange text-center text-3xl p-10 animate-pulse">
+        <h1 className="text-orange text-center text-xl lg:text-3xl p-10 animate-pulse">
           WARM WELCOME ALL!
         </h1>
-        <h2 className="text-orange text-center text-lg animate-bounce">
+        <h2 className="text-orange text-center text-xl lg:text-lg animate-bounce">
           Hi everyone! Im Nishy.
         </h2>
 
-        <p className="text-orange text-center text-sm p-10 animate-pulse">
+        <p className="text-orange text-center text-sm  p-2 lg:p-10 animate-pulse">
           Thank you for stopping by! This is my personal website.
         </p>
         <div className="w-full flex flex-col">
-          <h2 className="text-orange m-auto">
+          <h2 className="text-orange m-auto text-center text-sm lg:text-md">
             Give likes to my web(click counter lol 🤪)
           </h2>
           <h1
@@ -77,7 +77,7 @@ export default function Welcome() {
           </button>
         </div>
         <div className="lg:flex w-full mt-20">
-          <p className="text-orange text-center text-lg  m-auto p-10 animate-pulse lg:flex">
+          <p className="text-orange text-center lg:text-lg  m-auto lg:p-10 animate-pulse lg:flex">
             You can find the source code base of this webiste
             <div
               className="text-white text-xl mx-2  cursor-pointer"

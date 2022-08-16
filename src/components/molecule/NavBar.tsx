@@ -16,7 +16,7 @@ export default function NavBar({ navProps }: Props) {
   return (
     <div className="lg:px-2 py-8 w-5/6 lg:w-full text-white font-serif bg-black   lg:flex justify-between">
       <div
-        className=" ml-10 lg:ml-0 lg:flex justify-start px-3 lg:px-5 cursor-pointer hover:text-orange hover:text-xl"
+        className=" ml-10 lg:ml-0 lg:flex justify-start px-3 lg:px-5 text-sm lg:text-lg cursor-pointer hover:text-orange"
         onClick={() => navigate(HOME_PAGE_PATH)}
       >
       PROFILE
@@ -26,7 +26,7 @@ export default function NavBar({ navProps }: Props) {
           ? navProps?.map((prop: any, index: any) => {
               return (
                 <div
-                  className={`flex justify-end hover:text-xl my-10 lg:my-0 lg:px-4 hover:text-orange cursor-pointer ${
+                  className={`flex justify-end my-10 lg:my-0 lg:px-4 text-sm lg:text-lg hover:text-orange cursor-pointer ${
                     prop === CONSULTANCE
                       ? "py-2 lg:-mt-2 lg:border-2 lg:border-blue lg:bg-orange  lg:text-blue rounded-3xl hover:text-base hover:text-blue"
                       : null
