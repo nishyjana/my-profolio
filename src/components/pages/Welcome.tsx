@@ -33,7 +33,7 @@ export default function Welcome() {
           />
         </div>
         {isMobile ? (
-          <h1 className="text-orange text-center text-3xl p-10 animate-pulse">
+          <h1 className="text-red text-center text-3xl p-10 animate-pulse">
             Not best fit for mobile view
           </h1>
         ) : null}
