@@ -42,7 +42,9 @@ export default function Welcome() {
           Thank you for stopping by! This is my personal website.
         </p>
         <div className="w-full flex flex-col">
-        <h2 className="text-orange m-auto">Give likes to my web(click counter lol 🤪)</h2>
+          <h2 className="text-orange m-auto">
+            Give likes to my web(click counter lol 🤪)
+          </h2>
           <h1
             className="m-auto my-2 cursor-pointer flex-col text-orange"
             onClick={() => {
@@ -52,7 +54,7 @@ export default function Welcome() {
           >
             👍
           </h1>
-          
+
           {display ? (
             <div className=" text-orange m-auto mb-3">
               {clickedCounts} Likes
