@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -6,16 +6,17 @@ import { addClickCount } from "../../redux/rootActions";
 import { RootState } from "../../redux/rootReducer";
 import { HOME_PAGE_PATH } from "../constants/PathIndex";
 import { GITHUB_LINK } from "../constants/Resources";
+import { isMobile } from "react-device-detect";
 
 export default function Welcome() {
   const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const [display, setDisplay] = useState(false);
   const clickedCounts = useSelector(
     (state: RootState) => state.general.clickCount
   );
 
-  const [count] = useState(clickedCounts);
   return (
     <div className="h-screen w-full bg-black border-2 border-orange border-opacity-40 rounded-3xl p-10">
       <div className="p-10 bg-white bg-opacity-5 h-full w-full rounded-3xl flex-col">
@@ -31,6 +32,11 @@ export default function Welcome() {
             className="w-10 rounded-full opacity-50 animate-ping"
           />
         </div>
+        {isMobile ? (
+          <h1 className="text-orange text-center text-3xl p-10 animate-pulse">
+            Not best fit for mobile view
+          </h1>
+        ) : null}
         <h1 className="text-orange text-center text-3xl p-10 animate-pulse">
           WARM WELCOME ALL!
         </h1>
@@ -55,7 +61,7 @@ export default function Welcome() {
             👍
           </h1>
 
-          {display ? (
+          {display || clickedCounts > 0 ? (
             <div className=" text-orange m-auto mb-3">
               {clickedCounts} Likes
             </div>
